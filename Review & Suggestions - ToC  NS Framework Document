@@ -1,0 +1,106 @@
+NS Framework Document
+Review & Suggestions
+Alex Galis – 3rd May 2017
+Table of Contents
+
+1.	Introduction  
+
+2.	Demand for Network Slicing  
+2.1	Key Terms
+Physical Resources
+Logical Resources
+Network Function
+Network Function Virtualisation
+Network Softwarization
+VPM
+Resource Slicing
+Network Slicing
+Slicing as a Service
+Relations between Slices and Segment/Domain of a network
+E2E Slicing
+     2.1.  Network Slicing as a Service  
+     2.2.  Domain & End-to-end Customization  
+   3.  Network Slicing Architecture 
+     3.1.  Basic Concepts  
+           3.1.1.  Network Slicing Provider  
+            3.1.2.  Network Slice Instance  
+             3.1.3.  Network Slice Type  
+             3.1.4.  Network Slice Template  
+3.1.5.  Network Slice Tenant 
+3.1.6.  Life-cycle Management of a slice
+  -  Create slice 
+  - Activate  slice  
+-  Update slice 
+-  Elasticity in slices
+-  Compose / decompose slices
+-  Monitoring slice status 
+-   Deactivate slice
+-   Delete slice
+- Procedure for the slice/resources/NFs  reservation/release /status messages
+
+ 
+3.1.7.  Vertical Expansion of Slices
+3.1.7.1  Network Slicing for Transport Networks
+3.1.7.2  Network Slicing for Core Networks
+3.1.7.3  Network Slicing for Edge Networks
+
+3.1.8.  Horizontal  Expansion of Slices
+3.1.8.1  Capability Exposure and APIs
+3.1.8.2  Multi-domain Slices
+3.1.8.3  E2E  Slices
+3.1.8.4  Control Plane Augmentations & Considerations
+3.1.8.5  Management Plane Augmentations & Considerations
+3.1.8.6  Orchestration Plane Augmentations & Actions
+             3.1.9 - multiple viewpoints on slices: 
+I) viewpoint of the slice's owner  towards user: from this viewpoint a slice is defined as a means to   "split" physical or virtual infrastructure elements to "service" smaller  portions. This action would be recursively done from the owner of the initial and physical infrastructure element to the users. 
+II) viewpoint of from the user towards the physical infrastructure owner. From this viewpoint a slice is viewed just as a set of resources that must be managed (requests to a provider, listed, changed, returned to the provider, etc.). This viewpoint emphasizes those issues that would be used in the SLA definition of a slice.
+
+     3.2.  General Reference Architecture  
+    3.2.1 Network Slice capabilities 
+
+
+
+•	Four-dimensional efficient slice creation with guarantees for isolation in each of the Data /Control /Management /Service planes. 
+•	Enablers for safe, secure and efficient multi-tenancy in slices.
+* Methods to enable diverse requirements for NS including guarantee for the end-to-end QoS of service in a slice.
+* Efficiency in slicing: specifying policies and methods to realize diverse requirements without re-engineering the infrastructure.
+* Recursion: namely methods for NS segmentation allowing a slicing hierarchy with parent - child relationships.
+* Customized security mechanisms per slice.
+* Methods and policies to manage the trade-offs between flexibility and efficiency in slicing.
+* Optimisation: namely methods for network resources automatic selection for NS; global resource view formed; global energy view formed; Network Slice deployed based on global resource and energy efficiency; Mapping algorithms.
+* Monitoring status and behaviour of NS in a single and/or muti-domain environment; NS interconnection.
+* Programmability and control of Network Slices.
+* Non-functional characteristics of Network Slices ( i.e. resilience, performance, flexibility, …)
+3.2.2 Reference Architecture
+4.  Data Plane of Network Slicing 
+     4.1.  Propagation of Guarantees 
+     4.2.  The Underlying Physical Layer 
+     4.3.  Hard vs Soft Slicing in the Data-plane  
+     4.4.  The Role of Deterministic Networking  
+     4.5.  The Role of VPNs  .
+     4.6.  Dynamic Provisioning 
+     4.7.  Non-IP Data Plane 
+     4.8  Programmability of the Data Plane
+     4.9 Data plane slicing protocols
+   
+5.  Control Plane of Network Slicing 
+  5.1 Control Operations
+  5.2 Programmability of the Control Plane 
+ 5.3. Control plane slicing protocols
+
+   6.  Management and Orchestration of Network Slicing 
+6.1 Self- Management Operations
+6.2 Programmability of the Management Plane
+6.3. Management plane slicing protocols
+
+7.  Service Functions and Mappings 
+7.1  YANG Models for Slicing
+7.2  Service Mappings
+
+   8.  OAM and Telemetry 
+   9.  IANA Considerations 
+   10. Security Considerations 
+   11. Acknowledgements  
+   12. Normative References  
+13. Informative References  
+
